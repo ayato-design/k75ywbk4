@@ -1,19 +1,3 @@
-// スムーススクロール(元：WEBデザインMATOME)
-$(function() {
-  $('a[href^="#"]').on('click', function(e) {
-    const href = $(this).attr('href');
-    // 空の # は無視
-    if (href === "#") return;
-    // 対象要素が存在しない場合も無視
-    const $target = $(href);
-    if ($target.length === 0) return;
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: $target.offset().top
-    }, 500, 'linear');
-  });
-});
-
 // 戻るボタン(元：SACOCHAN-DESIGN.COM)
 $(document).ready(function () {
     const pagetopBtn = $(".back_button");
@@ -33,7 +17,3 @@ $(document).ready(function () {
         return false;
     });
 });
-    // スクロールイベント（負荷軽減も可）
-    $(window).on('scroll', handleScroll);
-    handleScroll(); // 初回チェック
-  });
