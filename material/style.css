@@ -71,6 +71,10 @@ img {
     width: 85%;
     border-left: 1px solid #FFFFFF;
 }
+.name_group {
+    display: flex;
+    gap: 5px;
+}
 .name {
     border-bottom: 1px solid #FFFFFF;
     padding: 30px;
